@@ -1,6 +1,7 @@
 import { Image, SafeAreaView, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import { rS, rVS, rMS } from '../styles/responsive'
+import { Fonts } from '../styles/fonts'
 
 
 const Home = () => {
@@ -13,8 +14,8 @@ const Home = () => {
         uri: 'https://wallpapers.com/images/high/shy-dobby-cartoon-fanart-nttrc4hubsie83x4.webp',
       }}/>
 
-      <Text style={{paddingTop: rMS(10), fontSize: rMS(20), fontFamily: 'Hanuman-Black'}}>App</Text>
-      <Text style={{paddingTop: rMS(10), fontSize: rMS(20), fontFamily: 'Hanuman-Bold'}}>App</Text>
+      <Text style={{paddingTop: rMS(10), fontSize: rMS(20), fontFamily: Fonts.hanumanBlack}}>App</Text>
+      <Text style={{paddingTop: rMS(10), fontSize: rMS(20), fontFamily: Fonts.hanumanBold}}>App</Text>
 
       <Text style={{paddingTop: rMS(10), fontSize: rMS(20), fontFamily: 'Hanuman-Light'}}>App</Text>
 
