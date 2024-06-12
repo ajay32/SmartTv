@@ -14,6 +14,8 @@ import FormInputController from '../../components/controllers/FormInputControlle
 import {yupResolver} from '@hookform/resolvers/yup';
 import {fromSchema} from '../../constants/authSchema';
 import MainButon from '../../components/buttons/MainButon';
+import Bread from '../../assets/svg/Bread';
+import PlusIcon from '../../assets/svg/PlusIcon';
 
 const Login = () => {
   const {
@@ -33,6 +35,11 @@ const Login = () => {
   };
   return (
     <SafeAreaView style={styles.container}>
+
+        <Bread width={200} height={200} opacity={0.4}/>
+
+        <PlusIcon width={100} height={100} />
+
       <FormInputController
         control={control}
         name={'email'}
@@ -77,3 +84,14 @@ const styles = StyleSheet.create({
     paddingHorizontal: rS(20),
   },
 });
+
+// while adding svg if you have any issue you can resolve it using below steps
+// The below steps solved my issue.
+
+// npm install react-native-svg
+// npm install react-native-svg-transformer
+// Uninstall your exist app
+
+// react-native-run-android
+
+
